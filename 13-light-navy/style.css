@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mx-auto {
+  margin: 0px auto;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+#light-navy {
+  width: 764px;
+  height: auto;
+  font-family: "Calibri", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+#light-navy hr {
+  margin: 5px 0 10px 0;
+  border-top: 1px solid #28467a;
+}
+#light-navy .section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #28467a;
+}
+#light-navy .personal-info {
+  background: #28467a;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  color: #fff;
+}
+#light-navy .personal-info .person-img {
+  display: flex;
+  width: 65%;
+}
+#light-navy .personal-info .person-img img {
+  width: 110px;
+  height: 110px;
+  border-radius: 6px;
+  background: #ddd;
+}
+#light-navy .personal-info .person-name {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+  word-wrap: break-word;
+  width: 70%;
+}
+#light-navy .personal-info .person-name .name {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+#light-navy .personal-info .person-name .position {
+  font-size: 20px;
+  font-weight: 400;
+}
+#light-navy .personal-info ul {
+  display: block;
+  list-style: none;
+}
+#light-navy .personal-info ul li {
+  text-align: right;
+  line-height: 21px;
+}
+#light-navy .personal-info ul li a {
+  color: #fff;
+}
+#light-navy .career-objective {
+  margin: 15px 0;
+}
+#light-navy .summary-column {
+  float: right;
+  width: 264px;
+  padding: 0 10px;
+  margin-left: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#light-navy .summary-column section {
+  margin-bottom: 15px;
+}
+#light-navy .summary-column ul {
+  list-style: none;
+}
+#light-navy .summary-column .skill {
+  display: flex;
+  justify-content: space-between;
+}
+#light-navy .summary-column strong,
+#light-navy .summary-column span {
+  display: block;
+}
+#light-navy .summary-column .education li:first-child {
+  margin-bottom: 10px;
+}
+#light-navy .detail-column section {
+  margin: 15px 0;
+}
+#light-navy .professional-summary ul {
+  padding: 0 0 0 15px;
+}
+#light-navy .career-work {
+  border-left: 1px solid #000;
+  position: relative;
+}
+#light-navy .career-work .company-detail {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+#light-navy .career-work .company-detail::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: #000;
+  top: 0px;
+  left: -4px;
+  border-radius: 50%;
+}
+#light-navy .career-work .company-detail h3 {
+  font-size: 12px;
+  font-weight: 400;
+  width: 25%;
+  text-wrap: nowrap;
+}
+#light-navy .career-work .company-detail h4 {
+  font-weight: 600;
+  color: #000;
+}
+#light-navy .comp-name {
+  padding-left: 40px;
+}
+#light-navy .detail-column li,
+#light-navy .summary-column li {
+  margin-bottom: 5px;
+}
+#light-navy .detail-column li:last-child,
+#light-navy .summary-column li:last-child {
+  margin-bottom: 0;
+}
+#light-navy .detail-column .work-exp .item {
+  margin-bottom: 20px;
+}
+#light-navy .detail-column .work-exp .item h6 {
+  font-size: 12px;
+}
+#light-navy .job-role,
+#light-navy .certify {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+#light-navy h3 {
+  font-size: 14px;
+}
+#light-navy h4,
+#light-navy h5 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #28467a;
+}
+#light-navy h5 {
+  text-wrap: nowrap;
+}
+#light-navy .work-done,
+#light-navy .ach,
+#light-navy .respo {
+  margin: 10px 0;
+}
+#light-navy .list-inside {
+  padding-left: 15px;
+}
+#light-navy .lang li,
+#light-navy .hobbies li {
+  display: inline-block;
+}
+
+@media print {
+  #light-navy {
+    -webkit-print-color-adjust: exact;
+    -moz-print-color-adjust: exact;
+    -ms-print-color-adjust: exact;
+    print-color-adjust: exact;
+    padding: 0;
+  }
+  #light-navy .career-work {
+    left: 4px;
+  }
+  @page {
+    size: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

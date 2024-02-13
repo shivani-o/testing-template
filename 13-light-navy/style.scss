@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mx-auto {
+  margin: 0px auto;
+}
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+#light-navy {
+  width: 764px;
+  height: auto;
+  font-family: "Calibri", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  hr {
+    margin: 5px 0 10px 0;
+    border-top: 1px solid #28467a;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #28467a;
+  }
+  .personal-info {
+    background: #28467a;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    color: #fff;
+    .person-img {
+      display: flex;
+      width: 65%;
+      img {
+        width: 110px;
+        height: 110px;
+        border-radius: 6px;
+        background: #ddd;
+      }
+    }
+    .person-name {
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: top;
+      word-wrap: break-word;
+      width: 70%;
+      .name {
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: 5px;
+      }
+      .position {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+    ul {
+      display: block;
+      list-style: none;
+      li {
+        text-align: right;
+        line-height: 21px;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .career-objective {
+    margin: 15px 0;
+  }
+  .summary-column {
+    float: right;
+    width: 264px;
+    padding: 0 10px;
+    margin-left: 10px;
+    height: -moz-fit-content;
+    height: fit-content;
+    section {
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style: none;
+    }
+    .skill {
+      display: flex;
+      justify-content: space-between;
+    }
+    strong,
+    span {
+      display: block;
+    }
+    .education li:first-child {
+      margin-bottom: 10px;
+    }
+  }
+  .detail-column section {
+    margin: 15px 0;
+  }
+  .professional-summary ul {
+    padding: 0 0 0 15px;
+  }
+  .career-work {
+    border-left: 1px solid #000;
+    position: relative;
+    .company-detail {
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 10px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        background-color: #000;
+        top: 0px;
+        left: -4px;
+        border-radius: 50%;
+      }
+      h3 {
+        font-size: 12px;
+        font-weight: 400;
+        width: 25%;
+        text-wrap: nowrap;
+      }
+      h4 {
+        font-weight: 600;
+        color: #000;
+      }
+    }
+  }
+  .comp-name {
+    padding-left: 40px;
+  }
+  .detail-column li,
+  .summary-column li {
+    margin-bottom: 5px;
+  }
+  .detail-column li:last-child,
+  .summary-column li:last-child {
+    margin-bottom: 0;
+  }
+  .detail-column .work-exp .item {
+    margin-bottom: 20px;
+    h6 {
+      font-size: 12px;
+    }
+  }
+  .job-role,
+  .certify {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  h4,
+  h5 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #28467a;
+  }
+  h5 {
+    text-wrap: nowrap;
+  }
+  .work-done,
+  .ach,
+  .respo {
+    margin: 10px 0;
+  }
+  .list-inside {
+    padding-left: 15px;
+  }
+  .lang li,
+  .hobbies li {
+    display: inline-block;
+  }
+}
+@media print {
+  #light-navy {
+    -webkit-print-color-adjust: exact;
+    -moz-print-color-adjust: exact;
+    -ms-print-color-adjust: exact;
+    print-color-adjust: exact;
+    padding: 0;
+    .career-work {
+      left: 4px;
+    }
+  }
+  @page {
+    size: auto;
+  }
+}
